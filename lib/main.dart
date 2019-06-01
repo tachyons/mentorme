@@ -16,7 +16,7 @@ class FlutterMeet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Meet',
+      title: 'Skill Meet',
       debugShowCheckedModeBanner: false,
       theme: appTheme,
       home: initialScreen,
