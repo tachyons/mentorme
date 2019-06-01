@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 // Firebase
@@ -28,7 +29,25 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     final FirebaseUser user = await _auth.signInWithCredential(credential);
-    print("signed in " + user.displayName);
+    Firestore.instance
+        .collection('users')
+        .where("email", isEqualTo: user.email)
+        .snapshots()
+        .listen((data) {
+          if(data.documents.length <1) {
+            Firestore.instance
+                .collection('users')
+                .add({
+                  "firstName": user.displayName,
+                   "email": user.email,
+                   "avatarUrl": user.photoUrl,
+            }).then((result) => {
+          });
+          } else {
+            print("signed in " + user.displayName);
+          }
+        });
+
     return user;
   }
 
