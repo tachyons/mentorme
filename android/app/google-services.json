@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "893363075067",
+    "firebase_url": "https://skillmeet-456.firebaseio.com",
+    "project_id": "skillmeet-456",
+    "storage_bucket": "skillmeet-456.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893363075067:android:b3f780d15e6720e1",
+        "android_client_info": {
+          "package_name": "com.thenga.skillmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893363075067-nkr6tlsdmot75iecvdi3s0h1vjt63k5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz9pZCUow9zNyiERYuDnPXxU57XAWrYqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893363075067-nkr6tlsdmot75iecvdi3s0h1vjt63k5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
