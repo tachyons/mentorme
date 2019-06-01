@@ -10,6 +10,7 @@ class PeoplesScreen extends StatefulWidget {
 }
 
 class _PeoplesScreenState extends State<PeoplesScreen> {
+
   Widget buildList(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
       stream: Firestore.instance.collection('users').snapshots(),
@@ -37,14 +38,15 @@ class _PeoplesScreenState extends State<PeoplesScreen> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Center(
-          child: Container(
-            constraints: BoxConstraints.expand(),
-            child: buildList(context),
-          ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text('Peoples'),
+      ),
+      body: Center(
+        child: Container(
+          constraints: BoxConstraints.expand(),
+          child: buildList(context),
         ),
       ),
     );
