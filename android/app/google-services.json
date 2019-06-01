@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "893363075067-80efdqh5uvhl0ll69pkmkgsmirbtd0ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thenga.skillmeet",
+            "certificate_hash": "f6b738ce1acb3afdc0b106e082118bfab8e543ad"
+          }
+        },
+        {
+          "client_id": "893363075067-u3baab8uevih1e1fkpl19hi1dv19e1qo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thenga.skillmeet",
+            "certificate_hash": "42b128acbd9228fa64078ca5cc53b46280b9a4ed"
+          }
+        },
+        {
           "client_id": "893363075067-nkr6tlsdmot75iecvdi3s0h1vjt63k5h.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -30,6 +46,13 @@
             {
               "client_id": "893363075067-nkr6tlsdmot75iecvdi3s0h1vjt63k5h.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "893363075067-p3cnjdos3gu4ghq8e1k322e0drdbsmnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thena.skillmeet"
+              }
             }
           ]
         }
