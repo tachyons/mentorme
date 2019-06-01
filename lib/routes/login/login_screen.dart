@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // Firebase
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:skillmeet/about.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String route = '/loginScreen';
@@ -34,9 +35,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('Peoples'),
-      ),
       body: Center(
         child: Container(
           /*decoration: new BoxDecoration(
@@ -70,12 +68,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 100.0,
               ),
               InkWell(
-                onTap: () {
+                onTap: () {/*
                   _handleSignIn().then((FirebaseUser user) {
                     Navigator.of(context).pushNamed('/landingpage');
                   }).catchError((e) {
                     print(e);
-                  });
+                  });*/
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context)=> ())
+                  );
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
