@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:skillmeet/feature/screens.dart';
+import 'package:skillmeet/routes/screens.dart';
 import 'package:skillmeet/shared/styles.dart';
 
 void main() {
   runApp(FlutterMeet(
-    initialScreen: PeoplesScreen(),
+    initialScreen: LoginScreen(),
   ));
 }
 
