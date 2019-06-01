@@ -64,12 +64,3 @@ class myDrawer extends StatelessWidget {
   }
 }
 
-_launchURL() async {
-  const url = 'http://mihiljose.com/privacy_policy';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
