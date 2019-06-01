@@ -25,6 +25,10 @@ class FlutterMeet extends StatelessWidget {
         LoginScreen.route: (_) => LoginScreen(),
         // Peoples screen
         PeoplesScreen.route: (_) => PeoplesScreen(),
+        // Profile screen
+        ProfileScreen.route: (_) => ProfileScreen(),
+        // About screen
+        AboutScreen.route: (_) => AboutScreen(),
       },
     );
   }

@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chips_input/flutter_chips_input.dart';
-import 'package:skillmeet/drawer.dart';
+import 'package:skillmeet/routes/profile/widgets/widgets.dart';
 
-class ProfileSection extends StatefulWidget {
+class ProfileScreen extends StatefulWidget {
+  static const String route = '/profileScreen';
+
   @override
   State<StatefulWidget> createState() {
-    return ProfileSectionState();
+    return ProfileScreenState();
   }
 }
 
-class ProfileSectionState extends State<ProfileSection> {
+class ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

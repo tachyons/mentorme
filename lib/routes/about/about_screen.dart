@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AboutPage extends StatelessWidget {
+class AboutScreen extends StatelessWidget {
+  static const String route = '/aboutScreen';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

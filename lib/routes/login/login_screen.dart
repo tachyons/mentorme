@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 // Firebase
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:skillmeet/about.dart';
-import 'package:skillmeet/profile/ProfileScreen.dart';
+import 'package:skillmeet/routes/about/about_screen.dart';
+import 'package:skillmeet/routes/profile/profile_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String route = '/loginScreen';
@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
               InkWell(
                 onTap: () {
                   _handleSignIn().then((FirebaseUser user) {
-                    Navigator.of(context).pushNamed('/landingpage');
+                    Navigator.of(context).pushNamed(ProfileScreen.route);
                   }).catchError((e) {
                     print(e);
                   });
