@@ -30,6 +30,11 @@ class AboutPage extends StatelessWidget {
           SliverList(
             delegate: SliverChildListDelegate(
               [
+
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text("Developed By:",style: TextStyle(fontSize: 24),),
+                ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(

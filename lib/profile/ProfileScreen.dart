@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chips_input/flutter_chips_input.dart';
+import 'package:skillmeet/drawer.dart';
 
 class ProfileSection extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class ProfileSectionState extends State<ProfileSection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: myDrawer(),
       appBar: new AppBar(
         title: new Text("Customise Profile"),
       ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:skillmeet/about.dart';
+import 'package:skillmeet/profile/ProfileScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String route = '/loginScreen';
@@ -75,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     print(e);
                   });*/
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context)=> ())
+                      MaterialPageRoute(builder: (context)=> ProfileSection())
                   );
                 },
                 child: ClipRRect(
