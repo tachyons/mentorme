@@ -69,15 +69,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 100.0,
               ),
               InkWell(
-                onTap: () {/*
+                onTap: () {
                   _handleSignIn().then((FirebaseUser user) {
                     Navigator.of(context).pushNamed('/landingpage');
                   }).catchError((e) {
                     print(e);
-                  });*/
-                  Navigator.of(context).push(
+                  });
+                 /* Navigator.of(context).push(
                       MaterialPageRoute(builder: (context)=> ProfileSection())
-                  );
+                  );*/
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
